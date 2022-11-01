@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+#header {
+  background-color: rgb(228, 228, 228);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  position: absolute;
+  left: 20px;
+  line-height: 60px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#gnbList {
+  display: flex;
+}
+
+#gnbList li {
+  text-align: center;
+  height: 60px;
+  width: 100px;
+  text-align: center;
+  line-height: 45px;
+}
+
+#gnbList li a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+}
+
+#gnbList li a:hover {
+  background-color: #bbb;
+  color: #fff;
+}
+
+.container {
+  width: 100vw;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.wrapper {
+  width: 300%;
+  height: 100%;
+  display: flex;
+  transition: 0.25s;
+}
+
+.wrapper ul {
+  justify-content: center;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex-shrink: 0;
+  font-size: 3rem;
+}
+
+.btns {
+  margin-top: 20px;
+}
+
+.btns ul {
+  display: flex;
+  justify-content: center;
+}
+
+.btns ul li {
+  margin: 0 10px;
+}
+
+.btns ul li button {
+  width: 40px;
+  height: 20px;
+}
+
+.bannerList {
+  width: 100vw;
+  height: 300px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bannerList li {
+  margin: 20px;
+}
+
+.bannerList li a {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+  margin-top: 20px;
+  overflow: hidden;
+  transition: 0.25s;
+}
+
+.bannerList li a img {
+  height: 100%;
+}
+
+.bannerList li:hover img {
+  transform: scale(1.1);
+}
+
+.btnChat {
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+
+  text-align: center;
+  line-height: 45px;
+  background-color: beige;
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  animation: slideUp 0.25s, fadeIn 1s;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: o;
+  }
+}
+
+@keyframes show {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 50px;
+  }
+}
